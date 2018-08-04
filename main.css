@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Minimal;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.main_class{
+    background-image: url(coder_pics.jpg);
+    width: 100%;
+    height: 900px;
+    background-position: top center;
+}
+
+#push_cent{
+    font-family: Minimal;
+    position: relative;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    text-shadow: 5px snow;
+    font-size: 30px;
+    opacity: 0;
+    animation-name: heading_animate;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+#nav_bar{
+    text-align: center;
+}
+
+#nav_bar a{
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 20% 20% 20% 20%;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+#nav_bar a:hover{
+    background:rgba(38, 38, 73, 0.719);
+    position: relative;
+    top: 6px;
+}
+
+
+#nav_bar li{
+    
+    position: relative;
+    display: inline;
+    text-decoration-line: none;
+    color: aliceblue;
+    margin: auto;
+    animation-name: nav_anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    padding-left:20px; 
+}
+
+.texter{
+    position: relative;
+    top: 400px;
+    color: aliceblue;
+    font-family: Minimal;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.6em;
+}
+
+span:before{
+    content: 'Me';
+    animation: animate infinite 28s linear;
+}
+
+.texter h3 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: linear;
+    animation-fill-mode: forwards;
+    animation: 
+      typing 3.5s steps(40, end) infinite,
+      blink-caret .75s step-end infinite;
+    
+}
+  
+.foot_main{
+    background-color: rgba(38, 38, 73, 0.719);
+    color: aliceblue;
+    text-align: center;
+}
+
+@keyframes animate{
+    0%{content: 'Smarty'}
+    25%{content: 'OneClickClassifier'}
+    50%{content:'Drowsilarm' }
+    75%{content: 'Bloo'}
+    100%{content: 'many more..'}
+}
+/* The typing effect */
+@keyframes typing {
+    0% { width: 0;opacity: 1;}
+    90% { width: 80%;opacity: 1;}
+    100%{width: 100%;opacity: 0;}
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    100% { border-color: orange; }
+}
+
+
+@keyframes nav_anim{
+    0%{top: 60px;left: -1000px;}
+    100%{top: 60px;left: 0px;}
+}
+
+@keyframes heading_animate{
+    0%{top: -50px; opacity: 0;}
+    100%{top: 20px;opacity: 1;}
+}
