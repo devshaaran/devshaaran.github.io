@@ -4,15 +4,16 @@
 }
 
 body{
-    font-family: Minimal;
+    font-family: Minimal,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
 }
 
 .main_class{
     background-image: url(coder_pics.jpg);
-    width: 100%;
-    height: 900px;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
     background-position: top center;
 }
 
@@ -101,6 +102,62 @@ span:before{
     text-align: center;
 }
 
+.main_body{
+    color: aliceblue;
+    background-color: rgb(32, 32, 46);
+}
+
+.header{
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+    width: 100%;
+    border-bottom: 1px solid white;
+    font-size:300%; 
+}
+
+.hci{
+    text-align: center;
+    font-size: 250%;
+    padding-left: 45px;
+}
+
+.subhead{
+    padding-left: 5px;
+    font-size: 200%;
+}
+
+.lists_smarty{
+    padding-left: 35px;
+    font-size: 130%;
+}
+
+.push_list{
+    padding-left: 15px;
+    font-size: 150%;
+}
+
+#f_para{
+    font-size: 150%;
+    padding-left: 15px;
+}
+
+#footr{
+    text-align: center;
+    font-size: 100%;
+    background-color: rgba(37, 24, 85, 0.692);
+}
+
+.lists_smarty a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.lists_smarty #info{
+    list-style: none;
+    padding: 5px 10px;
+
+}
 @keyframes animate{
     0%{content: 'Smarty'}
     25%{content: 'OneClickClassifier'}
@@ -131,3 +188,4 @@ span:before{
     0%{top: -50px; opacity: 0;}
     100%{top: 20px;opacity: 1;}
 }
+
